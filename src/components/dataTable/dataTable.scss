@@ -1,0 +1,106 @@
+.datatable{
+  height:600px;
+  padding:20px;
+  background:#d0e3ff35;
+
+
+  .datatableTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    font-size: 24px;
+    color: grey;   
+
+    .backArrow{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight:800;
+      color:darkblue;
+    }
+
+    .link{
+      display: flex;
+      padding:5px;
+      font-size: 16px;
+      font-weight: 400;
+      text-decoration: none;
+      border: 1px solid green;
+      border-radius: 5px;
+      cursor: pointer;
+      background: green;
+      color:white;
+    }
+
+  }
+  
+  /*cellWithImg and cellImg className can be found from dataTableSources.js, exported in 
+  DataTable.jsx*/
+
+
+  .cellWithImg{
+    display:flex;
+    align-items: center;
+
+    .cellImg{
+        width:32px;
+        height: 32px;
+        margin-right: 20px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+  }
+
+  // .cellWithStatus{
+  //   padding:5px;
+  //   border-radius: 5px;
+
+  //   &.Published{
+  //       color: green;        
+  //   }
+  //   &.Cancelled{
+  //       color: goldenrod;       
+  //   }
+  //   &.Draft{
+  //       color: rgb(151, 134, 136);       
+  //   }
+
+  // }
+  
+  .cellAction{
+    display:flex;
+    align-items: center;
+    gap:15px;
+  }
+
+  .viewButton{
+    padding: 2px 5px;
+    border-radius: 5px;
+    border: 1px dotted rgba(0, 0, 139, 0.368);
+    cursor:pointer;
+    color: darkblue;    
+  }
+  .deleteButton{
+    padding: 2px 5px;
+    border-radius: 5px;
+    border: 1px dotted rgba(220, 20, 60, 0.6);
+    cursor:pointer;
+    color: crimson;
+  }
+
+  //Mui SCSS own classes
+  .MuiDataGrid-main{
+    margin-top:3rem;
+  }
+
+  .MuiDataGrid-columnHeaders{
+    background:#b4d3ff49;    
+}
+
+
+.MuiDataGrid-row ~ :nth-of-type(2n){
+    background:#b4d3ff49;    
+}
+}

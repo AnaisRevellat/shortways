@@ -1,0 +1,68 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  font-size: 14px;
+  color: #555;
+  border-bottom: 0.5px solid rgb(231, 225, 225);
+
+  .wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    .search {
+      display: flex;
+      align-items: center;
+      padding: 3px;
+      border: 0.5px solid lightgrey;
+
+      input {
+        border: none;
+        outline: none;
+        background: transparent; //here it is important for the lightmode effect
+
+        &::placeholder {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .items {
+      display: flex;
+      align-items: center;
+    }
+    .item {
+      display: flex;
+      align-items: center;
+      position: relative;
+      margin-right: 20px;
+    }
+    .icon {
+      font-size: 20px;
+    }
+
+    .avatar {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+    .counter {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      width: 15px;
+      height: 15px;
+      font-size: 10px;
+      font-weight: bold;
+      border-radius: 50%;
+      background: red;
+      color: white;
+    }
+  }
+}

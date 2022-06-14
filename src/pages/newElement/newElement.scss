@@ -1,0 +1,158 @@
+.new {
+  width: 100%;
+  display: flex;
+
+  .newContainer {
+    flex: 6;
+
+    .top {
+      
+
+      .orderLeftRight{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        height: 400px;
+      }
+    }
+
+    .bottom,
+    .top {      
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      padding: 10px;
+      margin: 20px;
+
+      h1 {
+        color: lightgray;
+        font-size: 20px;
+      }
+
+      .left {
+        flex: 2;
+        position:relative;
+        text-align: center;
+        
+
+        .profileImg {
+          display:flex;
+          flex-wrap: wrap;
+          position: absolute;                   
+          top:4rem;
+          left: calc(31% - 1rem);                           
+        }
+
+        img {
+          width: 95px;
+          height: 95px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+
+      .right {
+        flex: 6;        
+        form {
+          display: flex;
+          flex-wrap: wrap;
+          position: relative;
+          margin-top: 50px;
+          gap: 30px;
+          justify-content: space-around;          
+
+          .options{
+            background:blue;
+            width:100%;
+          }
+
+          #fileLoader {
+            display: flex;
+            justify-content: center;
+            margin-left: 50px;
+            width:150px;            
+            height: auto; 
+            border:1px dashed black; 
+            border-radius: 5px;                    
+            cursor:pointer;          
+           
+            .box{
+              display:flex;
+              
+            }
+          }
+
+          .formInput {
+            width: 35%;
+
+            label {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+
+              .icon {
+                cursor: pointer;
+              }
+            }
+
+            input {
+              width: 100%;
+              padding: 5px;
+              border: none;
+              border-bottom: 1px solid gray;
+            }
+          }
+
+          .buttonsBox {
+            display: flex;
+            width:100%;
+            padding:5px 25px;
+            margin-left:2rem;
+            
+            button {
+              width: 150px;              
+              padding: 10px;
+              border: none;              
+              color: white;
+              font-weight: bold;
+              cursor: pointer;
+              
+              &:first-of-type{
+                background-color:darkblue;
+                border-radius: 5px 0 0 5px;
+              }
+              &:nth-child(2){
+                background:orange;
+              }
+              &:nth-child(3){
+                background:lightblue;
+                width:60px;                
+              }            
+              &:nth-child(4){
+                background:red;
+                width:60px;
+                border-radius: 0 5px 5px 0;
+              }               
+            }
+
+            &:disabled {
+              background-color: rgba(3, 92, 92, 0.322);
+              cursor: not-allowed;
+            }
+          }
+        }
+      }
+    }
+    .informationBox{
+
+    }
+    .guideBox {
+      width:100%;
+      height:200px;
+      border: 3px solid rgb(64, 184, 239);
+      border-radius: 5px;
+      color:black;
+    }
+  }
+
+
+}
